@@ -1,0 +1,18 @@
+<h1 id="cadastro">Carros cadastrados:</h1>
+    {{#if emptycars}}
+    <p>Não há usuários cadastradas</p>
+    {{/if}}
+    {{#each cars}}
+<div class="flex">
+  <h2 class="block-vagas">
+      <div class="block-vagas">
+        <h2 class="car-ocupado">Carro: <p>{{this.name}}</p></h2>
+        <div class="cor">
+          <H2>Cor: <p>{{this.cor}}</p></H2>
+        </div>
+      </div>
+</div>
+
+           
+    {{/each}}
+
